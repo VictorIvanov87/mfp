@@ -22,6 +22,7 @@ jobs:
             AWS_DISTRIBUTION_ID: ${{ secrets.AWS_DISTRIBUTION_ID }}
             AWS_S3_BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET_NAME }}
             AWS_DEFAULT_REGION: eu-central-1
+            AWS_EC2_METADATA_DISABLED: true
 
         steps:
             - uses: actions/checkout@v2
